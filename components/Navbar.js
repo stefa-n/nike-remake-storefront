@@ -11,7 +11,7 @@ export default function Navbar() {
                 window.document.getElementById('navbar').style.top = "0";
             } else {
                 window.document.getElementById('navbar').style.top = "-60px";
-            };
+            }
             prevScrollpos = currentScrollPos;
         };
     }, []);

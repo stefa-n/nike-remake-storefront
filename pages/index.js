@@ -14,8 +14,8 @@ export default function Home() {
             </Head>
             <Navbar/>
             <div style={{height: '60px'}}></div>
-            <Headline />
-            <Products />
+            <Headline/>
+            <Products/>
         </div>
     )
 }

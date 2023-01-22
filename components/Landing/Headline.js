@@ -27,7 +27,8 @@ export default function Headline() {
                 }}>This is a store that you&apos;ll like. This is the store that sells the best shoes. This
                     is <b>THE</b> store.</p>
             </div>
-            <Image src='/headline/banner.png' width={1920} height={1080} alt='Banner image' style={{width: '100%', height: 'auto'}}/>
+            <Image src='/headline/banner.png' width={1920} height={1080} alt='Banner image'
+                   style={{width: '100%', height: 'auto'}}/>
         </div>
     )
 }
