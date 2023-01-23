@@ -21,7 +21,6 @@ export default function Navbar() {
                     })
                         .then((response) => response.json())
                         .then(({cart}) => {
-                            if (!cart)
                             localStorage.setItem("cart_id", cart.id);
                             setCartLength(cart.items.length);
                         })
