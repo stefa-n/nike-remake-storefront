@@ -1,7 +1,7 @@
 import Head from 'next/head';
 
 import Navbar from '../components/Navbar';
-import Products from '../components/Products';
+import Products from '../components/Landing/Products';
 import Headline from '../components/Landing/Headline';
 
 export default function Home() {

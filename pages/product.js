@@ -5,7 +5,6 @@ import {useEffect, useState} from "react";
 import Navbar from '../components/Navbar';
 import Gallery from '../components/Product/Gallery';
 import AddToBag from '../components/Product/AddToBag';
-import Products from '../components/Products';
 
 export default function Product() {
     const router = useRouter()
@@ -54,7 +53,6 @@ export default function Product() {
                     <AddToBag cart={getCartId} id={getProdVariant}/>
                 </div>
             </div>
-            <Products/>
         </div>
     )
 }
