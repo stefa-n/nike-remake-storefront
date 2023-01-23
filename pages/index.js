@@ -1,8 +1,8 @@
-import Head from 'next/head'
+import Head from 'next/head';
 
-import Navbar from '../components/Navbar'
-import Headline from '../components/Landing/Headline'
-import Products from '../components/Landing/Products'
+import Navbar from '../components/Navbar';
+import Products from '../components/Products';
+import Headline from '../components/Landing/Headline';
 
 export default function Home() {
     return (
@@ -13,7 +13,7 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
             <Navbar/>
-            <div style={{height: '60px'}}></div>
+            <div style={{height: '60px'}}/>
             <Headline/>
             <Products/>
         </div>

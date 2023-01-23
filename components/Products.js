@@ -1,4 +1,5 @@
 import Link from "next/link";
+
 import {useEffect, useState} from "react";
 
 export default function Products() {
@@ -11,18 +12,18 @@ export default function Products() {
             });
     }, []);
     return (
-        <div style={{marginLeft: '3rem'}}>
+        <div style={{marginLeft: '3rem', marginRight: '3rem'}}>
             <div>
                 <p style={{fontSize: '24px'}}>Newest Arrivals</p>
             </div>
             <div style={{
                 display: 'flex',
                 flexWrap: 'wrap',
-                gap: '1rem',
+                gap: '0.8rem',
                 justifyContent: 'center'
             }}>
                 {products.map((product) => (
-                    <Link key={product.id} href={`/product?id=${product.id}`} style={{width: '598px'}}>
+                    <Link key={product.id} href={`/product?prod=${product.id}`} as={'/'} style={{width: '598px'}}>
                         <div key={product.id} style={{
                             width: '100%',
                             height: 'calc(0.389 * 100vw)',
