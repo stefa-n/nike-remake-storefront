@@ -4,9 +4,11 @@ import {useEffect, useState} from 'react'
 
 import Navbar from '../components/Navbar';
 import Bag from '../components/Cart/Bag';
+import Subtotal from '../components/Cart/Subtotal';
 
-export default function Home() {
+export default function Cart() {
     const [getCartCurrency, setCartCurrency] = useState('EUR')
+    const [getCartSubtotal, setCartSubtotal] = useState('EUR')
     const [getCartItems, setCartItems] = useState([])
 
     useEffect(() => {
@@ -17,8 +19,9 @@ export default function Home() {
             })
                 .then((response) => response.json())
                 .then(({cart}) => {
-                    setCartItems(cart.items);
+                    setCartSubtotal(cart.subtotal)
                     setCartCurrency(cart.region.currency_code)
+                    setCartItems(cart.items);
                 })
                 .catch(() => {
                     Router.push('/')
@@ -34,8 +37,9 @@ export default function Home() {
             </Head>
             <Navbar/>
             <div style={{height: '100px'}}/>
-            <div style={{display: 'flex', justifyContent: 'center'}}>
+            <div style={{display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center'}}>
                 <Bag items={getCartItems} currency={getCartCurrency}/>
+                <Subtotal subtotal={getCartSubtotal}/>
             </div>
         </div>
     )
