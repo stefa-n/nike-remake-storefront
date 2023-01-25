@@ -1,6 +1,6 @@
 export default function Subtotal({subtotal}) {
     return (
-        <div style={{width: '25vw', height: '295px', minWidth: '250px'}}>
+        <div style={{width: '17vw', height: '295px', minWidth: '250px'}}>
             <p style={{fontSize: '22px'}}>Summary</p>
             <div>
                 <p style={{display: 'inline-block'}}>Subtotal</p>
@@ -18,7 +18,7 @@ export default function Subtotal({subtotal}) {
                      color: 'white',
                      borderRadius: '30px'
                  }}>
-                <p style={{margin: '1.3276rem'}}>Add to Bag</p>
+                <p style={{margin: '1.3276rem'}}>Checkout</p>
             </div>
         </div>
     )
