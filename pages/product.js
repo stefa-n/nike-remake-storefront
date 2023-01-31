@@ -44,7 +44,7 @@ export default function Product() {
             </Head>
             <Navbar/>
             <div style={{height: '100px'}}/>
-            <div style={{display: 'flex', justifyContent: 'center'}}>
+            <div style={{display: 'flex', justifyContent: 'center', flexWrap: 'wrap'}}>
                 <Gallery gallery={getProdGallery}/>
                 <div style={{marginLeft: '48px', position: 'relative'}}>
                     <p style={{fontSize: '28px', marginBottom: '0px'}}>{getProdTitle}</p>

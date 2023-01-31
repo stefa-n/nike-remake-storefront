@@ -1,3 +1,4 @@
+import Router from 'next/router';
 export default function Subtotal({subtotal}) {
     return (
         <div style={{width: '17vw', height: '295px', minWidth: '250px'}}>
@@ -7,7 +8,9 @@ export default function Subtotal({subtotal}) {
                 <p style={{display: 'inline-block', float: 'right'}}>{subtotal / 100}</p>
             </div>
             <div style={{width: '100%', height: '0.1rem', backgroundColor: '#E5E5E5'}}/>
-            <div onClick={() => {}}
+            <div onClick={() => {
+                Router.push('/checkout')
+            }}
                  style={{
                      display: 'flex',
                      justifyContent: 'center',

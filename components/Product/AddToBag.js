@@ -17,8 +17,6 @@ export default function AddToBag({cart, id}) {
                 .then(() => Router.push('/'))
         }}
              style={{
-                 position: 'absolute',
-                 bottom: '0',
                  display: 'flex',
                  justifyContent: 'center',
                  width: '100%',
